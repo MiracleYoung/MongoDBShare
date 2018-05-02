@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MongoDB Share</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+</head>
+<body>
+
+<h1 class="text-center">Miracle 特点</h1>
+
+<br>
+
+<div class="container">
+
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">DevOps <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">Tech Leader <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">DOTA <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">美女 <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">MongoDB <br> Certified DBA <br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">MongoDB <br> 核心组成员 <br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">搞事 <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">Arch <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+    <div class="col-xs-4 well-item" data-count="1">
+        <p class="text-center">靠谱 <br><br></p>
+        <div class="correct"><img class="img-responsive" src="/static/img/cover.jpg"/></div>
+        <div class="opposite"><img class="img-responsive" src="/static/img/lufei.jpg"/></div>
+    </div>
+
+
+    <div class="col-xs-4 flip" data-count="1">
+        <div class="front">
+            <img class="img-responsive" src="/static/img/cover.jpg" alt="">
+        </div>
+        <div class="back">
+            <img class="img-responsive" src="/static/img/lufei.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-xs-4 flip" data-count="1">
+        <div class="front">
+            <img class="img-responsive" src="/static/img/cover.jpg" alt="">
+        </div>
+        <div class="back">
+            <img class="img-responsive" src="/static/img/lufei.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-xs-4 flip" data-count="1">
+        <div class="front">
+            <img class="img-responsive" src="/static/img/cover.jpg" alt="">
+        </div>
+        <div class="back">
+            <img class="img-responsive" src="/static/img/lufei.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        // var $animate = $('#animate');
+        // var $opposite = $('#opposite');
+
+        $(".flip").click(function () {
+            let cnt = $(this).data('count')
+
+            if (parseInt(cnt) % 2 == 1) {
+                $(this).css({'transform': 'rotateY(180deg)'})
+            } else {
+                $(this).css({'transform': 'rotateY(0deg)'})
+            }
+            $(this).data({'count': cnt + 1})
+        });
+
+    });
+</script>
+</body>
+</html>
